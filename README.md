@@ -1,2 +1,2 @@
-# rezepte
-https://afdia.github.io/rezepte/
+# jekyll
+https://afdia.github.io/jekyll/
