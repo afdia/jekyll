@@ -5,6 +5,7 @@ description: > #
 baseurl: "/rezepte" # the subpath of your site, e.g. /blog/
 url: "http://afdia.github.io" # the base hostname & protocol for your site
 github_username:  afdia
+show_downloads: true
 
 # Build settings
 markdown: kramdown
