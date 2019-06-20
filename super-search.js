@@ -97,8 +97,7 @@ MIT Licensed
 		if (matchingPosts.length && currentResultHash !== lastSearchResultHash) {
 			searchResultsEl.classList.remove('is-hidden');
 			searchResultsEl.innerHTML = matchingPosts.map(function (post) {
-				d = new Date(post.published);
-				return '<li><a href="' + post.id + '">' + post.title + '<span class="super-search__result-date">' + d.toUTCString().replace(/.*(\d{2})\s+(\w{3})\s+(\d{4}).*/,'$2 $1, $3') + '</span></a></li>';
+				return '<li><a href="' + post.id + '">' + post.title + ' <span class="super-search__result-date">' + post.published + '</span></a></li>';
 			}).join('');
 		}
 		lastSearchResultHash = currentResultHash;
@@ -120,19 +119,6 @@ MIT Licensed
 			posts = getPostsFromXml(node);
 		}
 		xmlhttp.send();
-
-		// Toggle on ESC key
-		window.addEventListener('keyup', function onKeyPress(e) {
-			if (e.which === 27) {
-				toggleSearch();
-			}
-		});
-		// Open on '/' key
-		window.addEventListener('keypress', function onKeyPress(e) {
-			if (e.which === 47 && !searchEl.classList.contains('is-active')) {
-				toggleSearch();
-			}
-		});
 
 		searchInputEl.addEventListener('input', function onInputChange() {
 			handleInput();
