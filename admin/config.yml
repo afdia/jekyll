@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: afdia/rezepte
+  repo: afdia/jekyll
   branch: master
   site_domain: laughing-brown-ef3bfd.netlify.com
 
