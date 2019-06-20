@@ -1,8 +1,7 @@
 # Site settings
-title: my title
-email: your-email@domain.com
+title: Rezepte etc
 description: > #
-  hello test!
+  Eine Liste an Rezepten
 baseurl: "/rezepte" # the subpath of your site, e.g. /blog/
 url: "http://afdia.github.io" # the base hostname & protocol for your site
 github_username:  afdia
