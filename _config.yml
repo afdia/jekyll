@@ -11,7 +11,7 @@ show_downloads: true
 markdown: kramdown
 permalink: /:year/:title:output_ext
 
-theme: jekyll-theme-minimal
+theme: minima
 
 plugins:
   - jekyll-feed
